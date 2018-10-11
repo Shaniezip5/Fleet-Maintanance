@@ -453,6 +453,11 @@ public class homePage extends javax.swing.JFrame {
         jLabel3.setText("Equipment");
 
         jButton8.setText("NEW");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         jLabel9.setText("for:");
 
@@ -800,6 +805,11 @@ public class homePage extends javax.swing.JFrame {
         }        // TODO add your handling code here:
     }//GEN-LAST:event_jButton7MousePressed
 
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+				newEquipment s = new newEquipment();
+				s.setVisible(true);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -832,14 +842,6 @@ public class homePage extends javax.swing.JFrame {
             new homePage().setVisible(true);
         });
     }
-    /*
-kasjdhfaeirtf
-
-sdafdgviuhadfogivfds
-sd;foucghaerdf
-*/  //hdwgf;dvb"Ufaj ;wHU4ET; RHABE;ORNNBV
-    
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Calender;
     private javax.swing.JPanel Equipment;
