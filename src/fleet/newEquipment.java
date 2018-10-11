@@ -16,6 +16,7 @@ public class newEquipment extends javax.swing.JFrame {
      */
     public newEquipment() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
