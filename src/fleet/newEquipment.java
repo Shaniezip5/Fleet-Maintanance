@@ -5,6 +5,8 @@
  */
 package fleet;
 
+import java.awt.CardLayout;
+
 /**
  *
  * @author berendfuchs
@@ -41,7 +43,8 @@ public class newEquipment extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        MainCard = new javax.swing.JPanel();
+        MAINCard = new javax.swing.JPanel();
+        MainGrid = new javax.swing.JPanel();
         ID = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -70,36 +73,90 @@ public class newEquipment extends javax.swing.JFrame {
         jComboBox5 = new javax.swing.JComboBox<>();
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
+        SpecGrid = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        WarGrid = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        PurcGrid = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        LoanGrid = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        InsGrid = new javax.swing.JPanel();
+        jLabel20 = new javax.swing.JLabel();
+        SettGrid = new javax.swing.JPanel();
+        jLabel21 = new javax.swing.JLabel();
+        NoteGrid = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         Seleted.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jButton5.setText("MAIN\n");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setText("SPECIFICATIONS");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setText("WARRENTY");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton8.setText("PURCHACE");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         jButton9.setText("LOAN / LEASE");
         jButton9.setMaximumSize(new java.awt.Dimension(100, 30));
         jButton9.setMinimumSize(new java.awt.Dimension(100, 30));
         jButton9.setPreferredSize(new java.awt.Dimension(100, 30));
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         jButton10.setText("INSURANCE");
         jButton10.setMaximumSize(new java.awt.Dimension(100, 30));
         jButton10.setMinimumSize(new java.awt.Dimension(100, 30));
         jButton10.setPreferredSize(new java.awt.Dimension(100, 30));
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
         jButton11.setText("NOTES");
         jButton11.setPreferredSize(new java.awt.Dimension(100, 30));
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
 
         jButton12.setText("SETTINGS");
         jButton12.setMaximumSize(new java.awt.Dimension(100, 30));
         jButton12.setMinimumSize(new java.awt.Dimension(100, 30));
         jButton12.setPreferredSize(new java.awt.Dimension(100, 30));
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout SeletedLayout = new javax.swing.GroupLayout(Seleted);
         Seleted.setLayout(SeletedLayout);
@@ -177,8 +234,10 @@ public class newEquipment extends javax.swing.JFrame {
                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(11, Short.MAX_VALUE))
         );
+
+        MAINCard.setLayout(new java.awt.CardLayout());
 
         ID.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -372,32 +431,181 @@ public class newEquipment extends javax.swing.JFrame {
                 .addContainerGap(112, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout MainCardLayout = new javax.swing.GroupLayout(MainCard);
-        MainCard.setLayout(MainCardLayout);
-        MainCardLayout.setHorizontalGroup(
-            MainCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainCardLayout.createSequentialGroup()
-                .addContainerGap(460, Short.MAX_VALUE)
+        javax.swing.GroupLayout MainGridLayout = new javax.swing.GroupLayout(MainGrid);
+        MainGrid.setLayout(MainGridLayout);
+        MainGridLayout.setHorizontalGroup(
+            MainGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainGridLayout.createSequentialGroup()
+                .addContainerGap(466, Short.MAX_VALUE)
                 .addComponent(PM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
-            .addGroup(MainCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(MainCardLayout.createSequentialGroup()
+            .addGroup(MainGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(MainGridLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(ID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(570, Short.MAX_VALUE)))
+                    .addContainerGap(698, Short.MAX_VALUE)))
         );
-        MainCardLayout.setVerticalGroup(
-            MainCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainCardLayout.createSequentialGroup()
+        MainGridLayout.setVerticalGroup(
+            MainGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainGridLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(PM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(MainCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(MainCardLayout.createSequentialGroup()
+            .addGroup(MainGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(MainGridLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(ID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addContainerGap()))
         );
+
+        MAINCard.add(MainGrid, "card2");
+
+        jLabel16.setText("jLabel16");
+
+        javax.swing.GroupLayout SpecGridLayout = new javax.swing.GroupLayout(SpecGrid);
+        SpecGrid.setLayout(SpecGridLayout);
+        SpecGridLayout.setHorizontalGroup(
+            SpecGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SpecGridLayout.createSequentialGroup()
+                .addContainerGap(692, Short.MAX_VALUE)
+                .addComponent(jLabel16)
+                .addGap(403, 403, 403))
+        );
+        SpecGridLayout.setVerticalGroup(
+            SpecGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SpecGridLayout.createSequentialGroup()
+                .addGap(192, 192, 192)
+                .addComponent(jLabel16)
+                .addContainerGap(252, Short.MAX_VALUE))
+        );
+
+        MAINCard.add(SpecGrid, "card3");
+
+        jLabel17.setText("jLabel17");
+
+        javax.swing.GroupLayout WarGridLayout = new javax.swing.GroupLayout(WarGrid);
+        WarGrid.setLayout(WarGridLayout);
+        WarGridLayout.setHorizontalGroup(
+            WarGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WarGridLayout.createSequentialGroup()
+                .addContainerGap(678, Short.MAX_VALUE)
+                .addComponent(jLabel17)
+                .addGap(417, 417, 417))
+        );
+        WarGridLayout.setVerticalGroup(
+            WarGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(WarGridLayout.createSequentialGroup()
+                .addGap(216, 216, 216)
+                .addComponent(jLabel17)
+                .addContainerGap(228, Short.MAX_VALUE))
+        );
+
+        MAINCard.add(WarGrid, "card4");
+
+        jLabel18.setText("jLabel18");
+
+        javax.swing.GroupLayout PurcGridLayout = new javax.swing.GroupLayout(PurcGrid);
+        PurcGrid.setLayout(PurcGridLayout);
+        PurcGridLayout.setHorizontalGroup(
+            PurcGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PurcGridLayout.createSequentialGroup()
+                .addContainerGap(684, Short.MAX_VALUE)
+                .addComponent(jLabel18)
+                .addGap(411, 411, 411))
+        );
+        PurcGridLayout.setVerticalGroup(
+            PurcGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PurcGridLayout.createSequentialGroup()
+                .addContainerGap(233, Short.MAX_VALUE)
+                .addComponent(jLabel18)
+                .addGap(211, 211, 211))
+        );
+
+        MAINCard.add(PurcGrid, "card5");
+
+        jLabel19.setText("jLabel19");
+
+        javax.swing.GroupLayout LoanGridLayout = new javax.swing.GroupLayout(LoanGrid);
+        LoanGrid.setLayout(LoanGridLayout);
+        LoanGridLayout.setHorizontalGroup(
+            LoanGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, LoanGridLayout.createSequentialGroup()
+                .addContainerGap(691, Short.MAX_VALUE)
+                .addComponent(jLabel19)
+                .addGap(404, 404, 404))
+        );
+        LoanGridLayout.setVerticalGroup(
+            LoanGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, LoanGridLayout.createSequentialGroup()
+                .addContainerGap(235, Short.MAX_VALUE)
+                .addComponent(jLabel19)
+                .addGap(209, 209, 209))
+        );
+
+        MAINCard.add(LoanGrid, "card6");
+
+        jLabel20.setText("jLabel20");
+
+        javax.swing.GroupLayout InsGridLayout = new javax.swing.GroupLayout(InsGrid);
+        InsGrid.setLayout(InsGridLayout);
+        InsGridLayout.setHorizontalGroup(
+            InsGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, InsGridLayout.createSequentialGroup()
+                .addContainerGap(659, Short.MAX_VALUE)
+                .addComponent(jLabel20)
+                .addGap(436, 436, 436))
+        );
+        InsGridLayout.setVerticalGroup(
+            InsGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(InsGridLayout.createSequentialGroup()
+                .addGap(221, 221, 221)
+                .addComponent(jLabel20)
+                .addContainerGap(223, Short.MAX_VALUE))
+        );
+
+        MAINCard.add(InsGrid, "card7");
+
+        jLabel21.setText("jLabel21");
+
+        javax.swing.GroupLayout SettGridLayout = new javax.swing.GroupLayout(SettGrid);
+        SettGrid.setLayout(SettGridLayout);
+        SettGridLayout.setHorizontalGroup(
+            SettGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SettGridLayout.createSequentialGroup()
+                .addContainerGap(708, Short.MAX_VALUE)
+                .addComponent(jLabel21)
+                .addGap(387, 387, 387))
+        );
+        SettGridLayout.setVerticalGroup(
+            SettGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SettGridLayout.createSequentialGroup()
+                .addGap(190, 190, 190)
+                .addComponent(jLabel21)
+                .addContainerGap(254, Short.MAX_VALUE))
+        );
+
+        MAINCard.add(SettGrid, "card9");
+
+        jLabel15.setText("jLabel15");
+
+        javax.swing.GroupLayout NoteGridLayout = new javax.swing.GroupLayout(NoteGrid);
+        NoteGrid.setLayout(NoteGridLayout);
+        NoteGridLayout.setHorizontalGroup(
+            NoteGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, NoteGridLayout.createSequentialGroup()
+                .addContainerGap(681, Short.MAX_VALUE)
+                .addComponent(jLabel15)
+                .addGap(414, 414, 414))
+        );
+        NoteGridLayout.setVerticalGroup(
+            NoteGridLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NoteGridLayout.createSequentialGroup()
+                .addGap(220, 220, 220)
+                .addComponent(jLabel15)
+                .addContainerGap(224, Short.MAX_VALUE))
+        );
+
+        MAINCard.add(NoteGrid, "card8");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -405,25 +613,24 @@ public class newEquipment extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addComponent(Operators, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(MainCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(MAINCard, javax.swing.GroupLayout.PREFERRED_SIZE, 1148, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Seleted, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(Seleted, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Seleted, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(MainCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MAINCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Operators, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -434,6 +641,46 @@ public class newEquipment extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
       this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+      CardLayout d = (CardLayout)(MAINCard.getLayout());
+       d.show(MAINCard, "card2" );
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+      CardLayout d = (CardLayout)(MAINCard.getLayout());
+       d.show(MAINCard, "card3" );  // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+       CardLayout d = (CardLayout)(MAINCard.getLayout());
+       d.show(MAINCard, "card4" );  // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+       CardLayout d = (CardLayout)(MAINCard.getLayout());
+       d.show(MAINCard, "card5" ); // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+       CardLayout d = (CardLayout)(MAINCard.getLayout());
+       d.show(MAINCard, "card6" ); // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+       CardLayout d = (CardLayout)(MAINCard.getLayout());
+       d.show(MAINCard, "card7" );// TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+       CardLayout d = (CardLayout)(MAINCard.getLayout());
+       d.show(MAINCard, "card8" ); // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+       CardLayout d = (CardLayout)(MAINCard.getLayout());
+       d.show(MAINCard, "card9" ); // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -472,10 +719,18 @@ public class newEquipment extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel ID;
-    private javax.swing.JPanel MainCard;
+    private javax.swing.JPanel InsGrid;
+    private javax.swing.JPanel LoanGrid;
+    private javax.swing.JPanel MAINCard;
+    private javax.swing.JPanel MainGrid;
+    private javax.swing.JPanel NoteGrid;
     private javax.swing.JPanel Operators;
     private javax.swing.JPanel PM;
+    private javax.swing.JPanel PurcGrid;
     private javax.swing.JPanel Seleted;
+    private javax.swing.JPanel SettGrid;
+    private javax.swing.JPanel SpecGrid;
+    private javax.swing.JPanel WarGrid;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -499,7 +754,14 @@ public class newEquipment extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
