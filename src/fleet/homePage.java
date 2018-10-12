@@ -452,7 +452,8 @@ public class homePage extends javax.swing.JFrame {
         jLabel3.setText("Equipment");
 
         jButton8.setBackground(new java.awt.Color(51, 51, 255));
-        jButton8.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jButton8.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/if_add_126583.png"))); // NOI18N
         jButton8.setText("NEW");
         jButton8.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jButton8.addActionListener(new java.awt.event.ActionListener() {
